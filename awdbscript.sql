@@ -1264,4 +1264,4 @@ VIEW `adventureworks`.`vw_customerrentionchurn` AS
         WHERE
             (`adventureworks`.`tbl_fnl_customers`.`flag` = 1)) `c`
         LEFT JOIN `adventureworks`.`tbl_fnl_sales` `s` ON ((`s`.`CUSTOMERKEY` = `c`.`customerkey`)))
-    GROUP BY `c`.`customerkey` , `c`.`customername`
+    GROUP BY `c`.`customerkey` , `c`.`customername`;
